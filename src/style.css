@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#eeeeee;
+    font-family:'Open Sans',sans-serif;
+}
+
+hr{
+    border:0;
+    background:#dedede;
+    height:1px;
+}
+
+header{
+    text-align:center;
+    color:#232323;
+    padding:20px 0;
+}
+
+header .judul{
+    font-size:30px;
+    font-weight:bold;
+}
+
+header .deskripsi{
+    font-size:14px;
+    margin-top:5px;
+}
+
+.wrap{
+    width:1300px;
+    margin:25px auto;
+}
+
+/* MENU */
+
+nav.menu{
+    width:100%;
+    margin-bottom:20px;
+}
+
+nav.menu ul{
+    overflow:hidden;
+    list-style:none;
+    background:#6c582fd6;
+    box-shadow:0 2px 5px rgba(0,0,0,.2);
+}
+
+nav.menu ul li{
+    float:left;
+}
+
+nav.menu ul li a{
+    display:block;
+    padding:20px 25px;
+    color:#fff;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav.menu ul li a:hover{
+    background:#f5bd6e;
+}
+
+/* BLOG */
+
+.blog{
+    float:left;
+    width:995px;
+}
+
+.conteudo{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border:1px solid #dedede;
+    box-shadow:0 2px 5px rgba(0,0,0,.15);
+}
+
+.conteudo h1{
+    margin-bottom:15px;
+    color:#666;
+    font-family:Georgia;
+    font-weight:normal;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    float:right;
+    width:275px;
+}
+
+.sidebar .widget{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border:1px solid #dedede;
+    box-shadow:0 2px 5px rgba(0,0,0,.15);
+}
+
+.sidebar .widget h2{
+    margin-bottom:15px;
+    color:#3498db;
+    font-size:18px;
+    text-transform:uppercase;
+    font-weight:800;
+}
+
+/* CLEAR FLOAT */
+
+.wrap::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:1300px){
+
+    .wrap{
+        width:95%;
+    }
+
+    .blog,
+    .sidebar{
+        width:100%;
+        float:none;
+    }
+
+    nav.menu ul li{
+        float:none;
+        width:100%;
+    }
+
+    nav.menu ul li a{
+        padding:15px;
+        border-top:1px solid #1abf9f;
+        border-bottom:1px solid #16a085;
+    }
+}
